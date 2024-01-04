@@ -1,5 +1,4 @@
-package 과제.과제2.Level1.ex8;
-
+package 과제1.과제1.ex8;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
@@ -16,7 +15,66 @@ public class Level1_8 {
 		String output = "";
 		
 		/* 문제풀이 위치 */
-		
+		System.out.print("[1]작성자 : ");
+		boardlist = scanner.nextLine();
+		System.out.print("[1]방문록 : ");
+		output = scanner.nextLine();
+
+		System.out.println(header);
+		System.out.println("1 \t"	+ boardlist+ "\t" 	+ output);
+		System.out.println(footer);
+
+
+		System.out.print("[2]작성자 : ");
+		String boardlist1 = scanner.nextLine();
+		System.out.print("[2]방문록 : ");
+		String output1 = scanner.nextLine();
+
+		System.out.println(header);
+		System.out.println("1 \t"	+ boardlist+ "\t" 	+ output);
+		System.out.println("2 \t"	+ boardlist1+ "\t" 	+ output1);
+		System.out.println(footer);
+
+
+		System.out.print("[3]작성자 : ");
+		String boardlist2 = scanner.nextLine();
+		System.out.print("[3]방문록 : ");
+		String output2 = scanner.nextLine();
+
+		System.out.println(header);
+		System.out.println("1 \t"	+ boardlist+ "\t" 	+ output);
+		System.out.println("2 \t"	+ boardlist1+ "\t" 	+ output1);
+		System.out.println("3 \t"	+ boardlist2+ "\t" 	+ output2);
+		System.out.println(footer);
+
+
+		System.out.print("[4]작성자 : ");
+		String boardlist3 = scanner.nextLine();
+		System.out.print("[4]방문록 : ");
+		String output3 = scanner.nextLine();
+
+		System.out.println(header);
+		System.out.println("1 \t"	+ boardlist+ "\t" 	+ output);
+		System.out.println("2 \t"	+ boardlist1+ "\t" 	+ output1);
+		System.out.println("3 \t"	+ boardlist2+ "\t" 	+ output2);
+		System.out.println("4 \t"	+ boardlist3+ "\t" 	+ output3);
+		System.out.println(footer);
+
+
+
+		System.out.print("[5]작성자 : ");
+		String boardlist4 = scanner.nextLine();
+		System.out.print("[5]방문록 : ");
+		String output4 = scanner.nextLine();
+
+		System.out.println(header);
+		System.out.println("1 \t"	+ boardlist+ "\t" 	+ output);
+		System.out.println("2 \t"	+ boardlist1+ "\t" 	+ output1);
+		System.out.println("3 \t"	+ boardlist2+ "\t" 	+ output2);
+		System.out.println("4 \t"	+ boardlist3+ "\t" 	+ output3);
+		System.out.println("5 \t"	+ boardlist4+ "\t" 	+ output4);
+		System.out.println(footer);
+
 		/* ----------- */
 	}
 }

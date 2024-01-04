@@ -1,5 +1,4 @@
-package 과제.과제2.Level1.ex6;
-
+package 과제1.과제1.ex6;
 public class Level1_6 {
 	
 	public static void main(String[] args) {
@@ -9,11 +8,15 @@ public class Level1_6 {
 		short value1 = 30000;			
 		int value2 = 2000000000;		
 		long value3 = 40000000000L;		
-		float value4 = 3.123123123F;	
+		float value4 = 3.123123123F;
 		double value5 = 3.123123123;	
 		
 		/* 문제풀이 위치 */
-
+		System.out.println("byte <- short:"+ value1);
+		System.out.println("short <- int:"+ value2);
+		System.out.println("int <- long:"+ value3);
+		System.out.println("long <- float:"+ value4);
+		System.out.println("float <- double:"+ value5);
 		/* ----------- */
 	}
 }

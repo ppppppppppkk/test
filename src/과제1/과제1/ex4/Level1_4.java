@@ -1,4 +1,4 @@
-package 과제.과제2.Level1.ex4;
+package 과제1.과제1.ex4;
 
 import java.time.LocalDateTime;
 
@@ -15,11 +15,17 @@ public class Level1_4 {
 		String answer3= "r`-_";
 		String answer4= " /,";
 		String answer5= " \\. ''.";
-		String answer6
-		System.out.println("\t\t\t\t\t\t\t\t" + answer );
-		System.out.println("\t\t\t\t\t\t\t" + answer1 +"\t"+answer4 );
-		System.out.println("\t"+answer3+ "\t\t\t\t" + answer2);
-		System.out.println("\t" +answer5);
+		String answer6= " L_r`";
+		String answer7= " \\. ~";
+		String answer8= "`~\\/";
+		String answer9= " |";
+		System.out.println("\t\t\t\t\t\t" + answer );
+		System.out.println("\t\t\t\t\t" + answer1 +"\t"+answer4 );
+		System.out.println("\t"+answer3+ "\t\t" + answer2 + "\t" + answer4);
+		System.out.println("\t"+ answer7 +"\t\t" + answer6);
+		System.out.println("\t\t"+answer8);
+		System.out.println("\t\t\t"+answer9);
+		System.out.println("\t\t\t"+answer9 );
 		/* ----------- */
 	}
 }
