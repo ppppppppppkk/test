@@ -18,7 +18,17 @@ public class Level2_3 {
 		System.out.println("국어\t영어\t수학\t합계\t평균\t3배수\t8배수\t홀짝\t결과");
 		
 		/* 문제풀이 위치 */
+		String str1 = "89";
+		String str2 = "49";
+		String str3 = "72";
+		String str4 = "210";
+		String str5 = "70.0";
+		String str6 = "true";
+		String str7 = "false";
+		String str8 = "짝수";
+		String str9 = "합격";
 
+		System.out.printf(str1+"\t"+str2+ "\t"+str3+"\t"+ str4 +"\t"+ str5+ "\t"+str6 +"\t"+str7 +"\t"+str8+"\t"+str9);
 		/* ----------- */
 	}
 }

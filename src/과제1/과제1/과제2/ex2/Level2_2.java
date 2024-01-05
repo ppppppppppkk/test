@@ -17,6 +17,16 @@ public class Level2_2 {
 		
 		/* 문제풀이 위치 */
 
+		String str1 = scanner.nextLine();
+		if(str1.equals("1") ){
+			System.out.println("회원가입 성공");
+		}else if(str1.equals("2")){
+			System.out.println("아이디 출력");
+		}else if(str1.equals("3")){
+			System.out.println("<<입력이 안된 정보가 있습니다>>");
+
+		}
+
 		/* ----------- */
 		
 	}

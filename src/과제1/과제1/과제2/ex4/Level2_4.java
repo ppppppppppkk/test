@@ -17,7 +17,19 @@ public class Level2_4 {
 		String player = scanner.next();
 		
 		/* 문제풀이 위치 */
-		
+		String computer = com == 0? "가위" : com==1? "바위" :"보";
+		int pl = player.equals("가위") ? 0 : player.equals("바위")? 1:2;
+		if(pl==(com+1)%3){
+			System.out.println("comran) " +computer);
+			System.out.println("player 승리");
+		}else if(pl==com){
+			System.out.println("comran) "+computer);
+			System.out.println("무승부");
+		}else{
+			System.out.println("comran) "+computer);
+			System.out.println("com 승리");
+		}
+
 		/* ----------- */
 	}
 }
