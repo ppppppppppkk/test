@@ -6,7 +6,7 @@ public class Step2 { //c s
     public static void main(String[] args) { // m s
 
         int result1 = 10 + 2 + 8;           // 숫자일경우에는 연산
-        System.out.println(result1 + "10"); //문자일경우에는 연결 2010
+        System.out.println(result1 + "10"); // 문자일경우에는 연결 2010
 
         // 문자열을 기본타입으로 변환
             // - JAVA외 애플리케이션과 통신할때 [메모장, http : hyper text transfor protocol]
