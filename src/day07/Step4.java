@@ -6,10 +6,8 @@ public class Step4 { // c s
     public static void main(String[] args) { // m s
 
         Scanner scanner = new Scanner(System.in); //입력하기
-
         String 전화번호부 = "김현수,010-3913-2072\n유재석,010-1234-1234\n강호동,010-7777-7777";
-       // Phone[] phoneBook = new Phone[100];
-
+        Phone[] phoneBook = new Phone[100];
         // 문자열 설계
         // 하나의 여러개 저장하니까. 여러개를 구분하면서 저장해야되니까. 구분자(정해진건 없음 )
         // 1.전화번호부에는 여럿 사람들이 저장되니까. 사람 구분  \n
@@ -63,8 +61,6 @@ public class Step4 { // c s
                     }
                 }
             }
-
-
         }
     } // m e
 }// c e

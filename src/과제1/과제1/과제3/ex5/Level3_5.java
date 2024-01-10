@@ -14,7 +14,7 @@ public class Level3_5 {
 		String authNumber = "";
 		
 		/* 문제풀이 위치 */
-		for( int i = 0; i < 6; i++){
+		for( int i = 0; i < 6; i++){	//
 			Random random = new Random(); //랜덤 함수 생성
 			int num1 = random.nextInt(10);
 			authNumber += num1;	//
