@@ -16,9 +16,26 @@ public class Level4_4 {
 
 		while ( true ) {
 			/* 문제풀이 위치 */
-			int a = scanner.nextInt();
-			System.out.println("1.전진 2.후진 선택>");
+			for (int i = 0; i < X_AXIS.length; i++) {
+				System.out.print(X_AXIS[i] + ",");
+			}
+			System.out.print("1. 전진 2. 후진선택>");
 
+			int no = scanner.nextInt();
+			if( no == 2) {
+				String temp = X_AXIS[0];
+				for (int i = 0; i < X_AXIS.length - 1; i++) {
+					X_AXIS[i] = X_AXIS[i + 1];
+				}
+				X_AXIS[X_AXIS.length - 1] = temp;
+			} else if (no == 1) {
+
+				String temp = X_AXIS[X_AXIS.length - 1];
+				for (int i = X_AXIS.length - 1; i > 0; i--) {
+					X_AXIS[i] = X_AXIS[i - 1];
+				}
+				X_AXIS[0] = temp;
+			}
 			/* ----------- */
 		}
 	}
