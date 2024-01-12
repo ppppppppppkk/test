@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Step4 { // c s
 
     public static void main(String[] args) { // m s
-
+    // 공개        없다
         Scanner scanner = new Scanner(System.in);
         Phone[] phoneBook = new Phone[100]; //1. Phone객체 100개를 저장할 수 있는 phone 배열 선언
             //등록전 : null  null 이 100개 들어있음
