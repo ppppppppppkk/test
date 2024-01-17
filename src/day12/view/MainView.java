@@ -19,7 +19,7 @@ public class MainView {
     public void run(){
         while (true){
             System.out.println("======메인페이지======");
-            System.out.println("1.회원가입 | 2. 로그인");
+            System.out.println("1.회원가입 | 2. 로그인 | 3. 아이디찾기 | 4.비밀번호 찾기");
             System.out.println("선택>");
             int ch = scanner.nextInt();
 
@@ -28,6 +28,10 @@ public class MainView {
 
             }else if( ch == 2){ //로그인 페이지 이동
                 MemberView.getInstance().login();
+            }else if (ch == 3){
+                MemberView.getInstance().idsearch();
+            }else if (ch == 4){
+                MemberView.getInstance().pwsearch();
             }
 
         }// wh e

@@ -4,6 +4,7 @@ import day12.controller.Membercontroller;
 import day12.model.MemberDto;
 import 과제1.과제1.과제5.Member;
 
+import javax.rmi.ssl.SslRMIClientSocketFactory;
 import java.util.Scanner;
 
 //VIEW : 화면구현(입출력)
@@ -63,6 +64,40 @@ public class MemberView {
         }
 
     }
+
+    public void idsearch(){
+        System.out.println("[1]MemberView.idsearch");
+        Scanner scanner = MainView.getInstance().scanner;
+        System.out.println("아이디 입력"); String id = scanner.next();
+        System.out.println("전화번호 입력"); String phone = scanner.next();
+
+        MemberDto memberDto = new MemberDto();
+        memberDto.setId( id ); memberDto.setPhone(phone);
+
+        String result = Membercontroller.getInstance().idsearch( memberDto );
+
+        System.out.println("[5]result"+result);
+        System.out.println("아이디 폰넘버"+ id +"\t"+ phone);
+    }
+
+    public void pwsearch(){
+        System.out.println("[1]MemberView.pwsearch");
+        Scanner scanner = MainView.getInstance().scanner;
+        System.out.println("아이디 입력"); String id = scanner.next();
+        System.out.println("전화번호 입력"); String phone = scanner.next();
+
+        MemberDto memberDto = new MemberDto();
+        memberDto.setPw( phone );
+
+        String result = Membercontroller.getInstance().pwsearch( memberDto );
+
+        System.out.println("[5]result" +result);
+        System.out.println("비번"+memberDto.getPw());
+
+
+
+    }
+
 
 
 }

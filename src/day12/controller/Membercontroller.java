@@ -3,6 +3,7 @@ package day12.controller;
 
 import day12.model.MemberDao;
 import day12.model.MemberDto;
+import day12.view.MemberView;
 import 과제1.과제1.과제5.Member;
 
 import java.util.Stack;
@@ -18,7 +19,7 @@ public class Membercontroller {
     //1. 회원가입 메소드
     public boolean singup(MemberDto memberDto){
         //컨트롤 처리
-        System.out.println("[2]Membercontroller.singup");
+        System.out.println("[2]Membercontroller.singup"+memberDto);
        //2. 유효성 검사 처리
        //3. view받은 객체를 DAO에게 전달 후 처리 결과를 받기
        boolean result = MemberDao.getInstance().singup(memberDto);
@@ -45,4 +46,22 @@ public class Membercontroller {
         return result;
     }
 
+    //3. 아이디 찾기
+    public String idsearch( MemberDto memberDto) {
+        System.out.println("[2]Membercontroller.idsearch");
+
+        String result = MemberDao.getInstance().idsearch(memberDto);
+
+        System.out.println("[4]result = " + result);
+        return memberDto.getId() ;
+    }
+
+    public  String pwsearch( MemberDto memberDto){
+        System.out.println("[2]Membercontroller.pwsearch");
+
+        String result = MemberDao.getInstance().pwsearch(memberDto);
+
+        System.out.println("[4]result ="+result);
+        return memberDto.getPw();
+    }
 }
