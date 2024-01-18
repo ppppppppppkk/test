@@ -1,33 +1,43 @@
 package 과제1.과제1.과제6;
+import day12.view.MemberView;
+import 과제1.과제1.과제6.Member;
+
+import java.awt.*;
 import java.util.Scanner;
 
-public class MemberSys { // class s 
+public class MemberSys { // class s
+	static Member[] memberArray = new Member[50];
+
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 
 		while(true) {
-
+			int num = 0;
 			System.out.println("\n\n--------- 회원 시스템 ---------");
 			System.out.print("1.회원가입 2.로그인 3.아이디찾기 4.비밀번호찾기   선택> ");
-			int ch = sc.nextInt();
+			int ch = scanner.nextInt();
 
 			if( ch == 1 ) {
 
 			}
 			else if( ch == 2 ) {
 
+
 			}
 			else if( ch == 3 ) {
 
-			}
+				}
+
+
+
 			else if( ch == 4 ) {
 
 			}
 
 		} // w e
-	} // m e 
-} // class e 
+	} // m e
+} // class e
 /*
 	주제 : 회원제 시스템 part2
 	 	- Member , MemberSys 클래스를 이용하여 아래 조건에 따라. 코드를 완성하시오.

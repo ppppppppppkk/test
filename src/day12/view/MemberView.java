@@ -77,22 +77,23 @@ public class MemberView {
         String result = Membercontroller.getInstance().idsearch( memberDto );
 
         System.out.println("[5]result"+result);
-        System.out.println("아이디 폰넘버"+ id +"\t"+ phone);
+        System.out.println("아이디 폰넘버"+"\n"+ id +"\t"+ phone);
     }
 
     public void pwsearch(){
         System.out.println("[1]MemberView.pwsearch");
         Scanner scanner = MainView.getInstance().scanner;
         System.out.println("아이디 입력"); String id = scanner.next();
-        System.out.println("전화번호 입력"); String phone = scanner.next();
+        System.out.println("비밀번호 입력"); String pw = scanner.next();
 
         MemberDto memberDto = new MemberDto();
-        memberDto.setPw( phone );
+        memberDto.setPw(pw);
 
         String result = Membercontroller.getInstance().pwsearch( memberDto );
 
-        System.out.println("[5]result" +result);
-        System.out.println("비번"+memberDto.getPw());
+        System.out.println("[5]result" + result);
+        System.out.println("아이디 비번"+"\n"+id+"\t"+pw);
+
 
 
 
