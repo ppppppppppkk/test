@@ -12,7 +12,7 @@ public class MainView {
      private static MainView mainView = new MainView(); // 싱글톤 패턴
      public static MainView getInstance(){return mainView;} //싱글톤 패턴
     //1.필드
-    Scanner scanner = new Scanner(System.in);
+    public Scanner scanner = new Scanner(System.in);
     //2.생성자
     //3.메소드
 

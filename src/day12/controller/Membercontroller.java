@@ -12,7 +12,7 @@ import java.util.Stack;
 public class Membercontroller {
 
     //싱글톤
-    private Membercontroller(){}
+    public Membercontroller(){}
     private static Membercontroller membercontroller = new Membercontroller();
     public  static Membercontroller getInstance(){ return membercontroller; }
 

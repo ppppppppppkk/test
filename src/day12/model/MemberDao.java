@@ -77,7 +77,7 @@ public class MemberDao {
                 }
             }
         }
-        return null;
+        return "아이디 찾기 실패";
     }
     public String pwsearch(MemberDto memberDto) {
         System.out.println("[3]MemberDto.pwsearch"+memberDto);
@@ -86,7 +86,7 @@ public class MemberDao {
                     return memberDtos.get(i).getPw();
             }
         }
-        return null;
+        return "비밀번호 찾기 실패";
     }
 
 
