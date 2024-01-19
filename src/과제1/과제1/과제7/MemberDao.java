@@ -1,8 +1,9 @@
 package 과제1.과제1.과제7;
 
-import day12.model.MemberDto;
+
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class MemberDao {
     private MemberDao() {
@@ -62,7 +63,7 @@ public class MemberDao {
         return false;// 로그인 실패
 
     }
-
+    //아이디 찾기
     public String idsearch(day12.model.MemberDto memberDto) {
         System.out.println("[3]MemberDto.idsearch"+memberDto);
         for (int i = 0; i < memberDtos.size(); i++) {
@@ -75,6 +76,9 @@ public class MemberDao {
         }
         return "아이디 찾기 실패";
     }
+    //비밀번호 찾기
+
+
     public String pwsearch(MemberDto memberDto) {
         System.out.println("[3]MemberDto.pwsearch"+memberDto);
         for (int i = 0; i < memberDtos.size(); i++) {

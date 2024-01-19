@@ -4,6 +4,8 @@ import day12.controller.Membercontroller;
 import day12.model.MemberDao;
 import day12.model.MemberDto;
 
+import java.util.Random;
+
 public class MemberController {
     private void Membercontroller(){}
     private static Membercontroller membercontroller = new Membercontroller();
@@ -50,6 +52,10 @@ public class MemberController {
     }
 
     public  String pwsearch( MemberDto memberDto){
+        Random random = new Random();
+        for(int i = 0; i < 6; i++){
+            System.out.println(random.nextInt(10)+1);
+        }
         System.out.println("[2]Membercontroller.pwsearch");
 
         String result = MemberDao.getInstance().pwsearch(memberDto);

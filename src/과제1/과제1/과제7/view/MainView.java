@@ -1,6 +1,5 @@
 package 과제1.과제1.과제7.view;
 
-import day12.view.MemberView;
 
 import java.util.Scanner;
 
@@ -27,12 +26,12 @@ public class MainView {
                 int ch = scanner.nextInt();
 
                 if (ch == 1) { //회원가입 페이지 이동
-                    day12.view.MemberView.getInstance().singup(); //호출
+                   MemberView.getInstance().singup(); //호출
 
                 } else if (ch == 2) { //로그인 페이지 이동
-                    day12.view.MemberView.getInstance().login();
+                  MemberView.getInstance().login();
                 } else if (ch == 3) {
-                    day12.view.MemberView.getInstance().idsearch();
+                   MemberView.getInstance().idsearch();
                 } else if (ch == 4) {
                     MemberView.getInstance().pwsearch();
                 }
