@@ -7,6 +7,7 @@ public class Step3 {
 
         Car myCar = new Car();
 
+
         myCar.tire = new Tire();
         myCar.run();
         
