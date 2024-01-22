@@ -15,7 +15,7 @@ public class Step3 {
         
         myCar.tire = new KumhoTire();
         myCar.run();
-
+//
     }
-    
+    //
 }
